@@ -4,8 +4,12 @@ Usage guide:
 
     2. Install the following software and ensure that Vim and all these binaries are accessible via your 'PATH' environment variable:
         a. Git
+        b. curl
+        c. clang - the same architecture as that of your Vim (x86/x64)
         d. Python - the same architecture as that of your Vim (x86/x64)
         e. ctags
+        f. cmake
+        g. Microsoft Visual C++ to build 'YouCompleteMe'. The Express edition will suffice.
 
     3. Invoke a command window (ensure that git.exe is in your system path) or invoke a "Git Shell".
        From within this command window, do the following:
@@ -17,7 +21,7 @@ Usage guide:
 
         c. Navigate to your 'HOME' directory.
 
-        d. Execute command: "git submodule foreach git pull origin master".
+        d. Execute command: git submodule foreach git pull origin master
 
         e. Install plugins using one of the following methods (either of these will take a while, go grab a coffee):
             1. From within Vim:
@@ -27,4 +31,6 @@ Usage guide:
             2. From the command prompt:
                 i.   Execute: 'vim +PluginInstall +qall'.
 
-    4. Restart Vim.
+    4. Build 'YouCompleteMe' according to instructions on its site: http://valloric.github.io/YouCompleteMe.
+
+    5. Restart Vim.

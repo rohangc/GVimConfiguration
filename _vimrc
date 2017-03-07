@@ -39,14 +39,15 @@ Plugin 'VundleVim/Vundle.vim'
 " My Plugins
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'ervandew/supertab'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/AfterColors.vim'
-Plugin 'vim-scripts/AutoComplPop'
-Plugin 'vim-scripts/OmniCppComplete'
 Plugin 'vim-scripts/taglist.vim'
+" This one takes a lot of time, hence do it last
+Plugin 'Valloric/YouCompleteMe'
+" The following are made redundant by 'Valloric/YouCompleteMe' above:
+" AutoCompIPop, supertab, OmniCPPComplete
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -137,6 +138,9 @@ let g:Tlist_WinWidth = 70
 let g:ctrlp_map = '<F7>'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 'ra'
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_global_ycm_extra_conf = "$HOME/vimfiles/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
 map <C-n> :tnext <CR>
 map <C-p> :tprev <CR>
 map <F5> :cprev <CR>
