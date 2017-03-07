@@ -21,7 +21,7 @@ Usage guide:
 
         c. Navigate to your 'HOME' directory.
 
-        d. Execute command: git submodule foreach git pull origin master
+        d. Execute command: "git submodule foreach git pull origin master".
 
         e. Install plugins using one of the following methods (either of these will take a while, go grab a coffee):
             1. From within Vim:
