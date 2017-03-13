@@ -71,8 +71,8 @@ set background=dark
 colorscheme solarized
 
 
-" My font
-if has('gui_running')
+" My font (on Windows only)
+if has('gui_running') && (has('win32') || has('win64'))
   set guifont=Consolas:h10:cANSI
 endif
 
