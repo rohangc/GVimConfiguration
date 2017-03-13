@@ -91,6 +91,9 @@ else
   endif
 endif
 
+if has('win32') || has('win64')
+    let &runtimepath.=',$HOME/.vim'
+endif
 
 " Configure backspace so it acts as it should act
 set backspace=eol,start,indent
