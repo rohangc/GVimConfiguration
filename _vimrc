@@ -93,7 +93,8 @@ else
 endif
 
 if has('win32') || has('win64')
-    let &runtimepath.=',$HOME/.vim'
+    exe 'set rtp+=' . expand('~/.vim')
+    exe 'set rtp+=' . expand('~/.vim/after')
 endif
 
 " Configure backspace so it acts as it should act
