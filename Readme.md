@@ -25,11 +25,11 @@ Usage guide:
 
         e. Install plugins using one of the following methods (either of these will take a while, go grab a coffee):
             1. From within Vim:
-                i.   Invoke GVim.
+                i.   Invoke GVim (from within the "Git Shell" on Windows).
                 ii.  Ignore all error messages.
                 iii. Execute Vim command: ':PluginInstall'.
             2. From the command prompt:
-                i.   Execute: 'vim +PluginInstall +qall'.
+                i.   Execute: 'vim +PluginInstall +qall' (from within the "Git Shell" on Windows).
 
     4. Build 'YouCompleteMe' according to instructions on its site: http://valloric.github.io/YouCompleteMe.
 
