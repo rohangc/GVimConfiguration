@@ -1,6 +1,7 @@
 Usage guide:
 -----------
     1. Install Vim ... obviously!
+       Ensure that you choose to create a default '_vimrc' file in the $VIM directory.
 
     2. Install the following software and ensure that Vim and all these binaries are accessible via your 'PATH' environment variable:
         a. Git
@@ -24,7 +25,7 @@ Usage guide:
                 i.   Invoke GVim (from within the "Git Shell" on Windows).
                 ii.  Ignore all error messages.
                 iii. Execute Vim command: ':PluginInstall'.
-            2. From the command prompt:
-                i.   Execute: 'vim +PluginInstall +qall' (from within the "Git Shell" on Windows).
+            2. From the command prompt ("Git Shell" on Windows):
+                i.   Execute: 'vim +PluginInstall +qall'.
 
     4. Restart Vim.
