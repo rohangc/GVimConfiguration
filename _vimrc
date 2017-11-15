@@ -145,3 +145,4 @@ map <F6> :cnext <CR>
 "map <F7> :CtrlPMixed <CR>
 map <F8> :NERDTreeToggle <CR>
 map <F9> :TlistToggle <CR>
+map <2-LeftMouse> *
