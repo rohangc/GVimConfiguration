@@ -138,6 +138,7 @@ let g:Tlist_WinWidth = 70
 let g:ctrlp_map = '<F7>'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 'ra'
+let g:solarized_contrast = "normal"
 map <C-n> :tnext <CR>
 map <C-p> :tprev <CR>
 map <F5> :cprev <CR>
