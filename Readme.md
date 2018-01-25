@@ -1,5 +1,9 @@
 Usage guide:
 -----------
+
+Installation:
+------------
+
     1. Install Vim ... obviously!
        Ensure that you choose to create a default '_vimrc' file in the $VIM directory.
 
@@ -8,8 +12,7 @@ Usage guide:
         d. Python - the same architecture as that of your Vim (x86/x64)
         e. ctags
 
-    3. Invoke a command window (ensure that git.exe is in your system path) or invoke a "Git Shell".
-       From within this command window, do the following:
+    3. Invoke a "Git Shell" and do the following:
 
         a. Clone this repository onto your PC by executing command: "git clone --recursive https://github.com/rohangc/GVimConfiguration.git".
            This will create a directory called 'GVimConfiguration'.
@@ -26,6 +29,14 @@ Usage guide:
                 ii.  Ignore all error messages.
                 iii. Execute Vim command: ':PluginInstall'.
             2. From the command prompt ("Git Shell" on Windows):
-                i.   Execute: 'vim +PluginInstall +qall'.
+                i.   Execute: "vim +PluginInstall +qall".
 
     4. Restart Vim.
+
+Update:
+------
+
+    1. Invoke a "Git Shell" and execute the following commands:
+        a. "git submodule foreach git pull origin master".
+        b. "vim +PluginUpdate +qall".
+
