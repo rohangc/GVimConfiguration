@@ -63,7 +63,7 @@ filetype plugin indent on    " required
 
 
 " My Colour scheme
-set background=dark
+set background=light
 colorscheme solarized
 
 
