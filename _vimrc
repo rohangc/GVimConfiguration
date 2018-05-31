@@ -141,6 +141,7 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:solarized_contrast = "high"
 map <C-n> :tnext <CR>
 map <C-p> :tprev <CR>
+map <F2> :term <CR>
 map <F5> :cprev <CR>
 map <F6> :cnext <CR>
 "map <F7> :CtrlPMixed <CR>
