@@ -37,6 +37,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ervandew/supertab'
+Plugin 'jlanzarotta/bufexplorer'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
@@ -147,4 +148,5 @@ map <F6> :cnext <CR>
 "map <F7> :CtrlPMixed <CR>
 map <F8> :NERDTreeToggle <CR>
 map <F9> :TlistToggle <CR>
+map <F10> :BufExplorerVerticalSplit <CR>
 map <2-LeftMouse> *
