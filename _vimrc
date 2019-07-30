@@ -45,6 +45,7 @@ Plugin 'vim-scripts/AfterColors.vim'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'vim-scripts/OmniCppComplete'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'AlessandroYorba/Alduin'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -64,8 +65,10 @@ filetype plugin indent on    " required
 
 
 " My Colour scheme
-set background=dark
-colorscheme solarized
+colorscheme alduin
+" Settings for solarized ...
+"set background=dark
+"colorscheme solarized
 
 
 " My font (on Windows only)
@@ -139,7 +142,7 @@ let g:Tlist_WinWidth = 70
 let g:ctrlp_map = '<F7>'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 'ra'
-let g:solarized_contrast = "high"
+"let g:solarized_contrast = "high"
 map <C-n> :tnext <CR>
 map <C-p> :tprev <CR>
 map <F2> :term <CR>
