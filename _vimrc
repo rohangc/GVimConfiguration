@@ -34,7 +34,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " My Plugins
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ervandew/supertab'
 Plugin 'jlanzarotta/bufexplorer'
