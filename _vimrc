@@ -34,6 +34,7 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " My Plugins
+Plugin 'AlessandroYorba/Alduin'
 "Plugin 'altercation/vim-colors-solarized'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'ervandew/supertab'
@@ -45,7 +46,7 @@ Plugin 'vim-scripts/AfterColors.vim'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'vim-scripts/OmniCppComplete'
 Plugin 'vim-scripts/taglist.vim'
-Plugin 'AlessandroYorba/Alduin'
+Plugin 'sukima/xmledit'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
