@@ -42,11 +42,11 @@ Plugin 'jlanzarotta/bufexplorer'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'sukima/xmledit'
 Plugin 'vim-scripts/AfterColors.vim'
 Plugin 'vim-scripts/AutoComplPop'
 Plugin 'vim-scripts/OmniCppComplete'
 Plugin 'vim-scripts/taglist.vim'
-Plugin 'sukima/xmledit'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
