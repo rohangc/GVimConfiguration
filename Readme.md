@@ -1,5 +1,9 @@
 Usage guide:
 -----------
+
+Installation:
+------------
+
     1. Install Vim ... obviously!
        Ensure that you choose to create a default '_vimrc' file in the $VIM directory.
 
@@ -12,10 +16,9 @@ Usage guide:
         f. cmake
         g. Microsoft Visual C++ to build 'YouCompleteMe'. The Express edition will suffice.
 
-    3. Invoke a command window (ensure that git.exe is in your system path) or invoke a "Git Shell".
-       From within this command window, do the following:
+    3. Invoke a "Git Shell" and do the following:
 
-        a. Clone this repository onto your PC by executing command: "git clone --recursive https://github.com/rohangc/GVimConfiguration".
+        a. Clone this repository onto your PC by executing command: "git clone --recursive https://github.com/rohangc/GVimConfiguration.git".
            This will create a directory called 'GVimConfiguration'.
 
         b. Move all files from within the newly created directory, 'GVimConfiguration', into your 'HOME' directory. On Windows, this is usually 'C:\Users\<your login name>'.
@@ -30,8 +33,16 @@ Usage guide:
                 ii.  Ignore all error messages.
                 iii. Execute Vim command: ':PluginInstall'.
             2. From the command prompt ("Git Shell" on Windows):
-                i.   Execute: 'vim +PluginInstall +qall'.
+                i.   Execute: "vim +PluginInstall +qall".
 
     4. Build 'YouCompleteMe' according to instructions on its site: http://valloric.github.io/YouCompleteMe.
 
     5. Restart Vim.
+
+Update:
+------
+
+    1. Invoke a "Git Shell" and execute the following commands:
+        a. "git submodule foreach git pull origin master".
+        b. "vim +PluginUpdate +qall".
+

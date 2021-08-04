@@ -34,11 +34,15 @@ Plugin 'VundleVim/Vundle.vim'
 "Plugin 'ascenator/L9', {'name': 'newL9'}
 
 " My Plugins
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'AlessandroYorba/Alduin'
+"Plugin 'altercation/vim-colors-solarized'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ervandew/supertab'
+Plugin 'jlanzarotta/bufexplorer'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'sukima/xmledit'
 Plugin 'vim-scripts/AfterColors.vim'
 Plugin 'vim-scripts/taglist.vim'
 " This one takes a lot of time, hence do it last
@@ -64,8 +68,10 @@ filetype plugin indent on    " required
 
 
 " My Colour scheme
-set background=dark
-colorscheme solarized
+colorscheme alduin
+" Settings for solarized ...
+"set background=dark
+"colorscheme solarized
 
 
 " My font (on Windows only)
@@ -142,12 +148,14 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_global_ycm_extra_conf = "$HOME/vimfiles/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
-let g:solarized_contrast = "high"
+"let g:solarized_contrast = "high"
 map <C-n> :tnext <CR>
 map <C-p> :tprev <CR>
+map <F2> :term <CR>
 map <F5> :cprev <CR>
 map <F6> :cnext <CR>
 "map <F7> :CtrlPMixed <CR>
 map <F8> :NERDTreeToggle <CR>
 map <F9> :TlistToggle <CR>
+map <F10> :BufExplorerVerticalSplit <CR>
 map <2-LeftMouse> *
