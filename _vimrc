@@ -68,10 +68,6 @@ filetype plugin indent on    " required
 
 " My Colour scheme
 colorscheme alduin
-" Settings for solarized ...
-"set background=dark
-"colorscheme solarized
-
 
 " My font (on Windows only)
 if has('gui_running') && (has('win32') || has('win64'))
@@ -112,6 +108,9 @@ set smartcase
 syntax enable 
 
 
+set encoding=utf-8
+
+
 " My preferred settings
 set autoindent
 set belloff=all
@@ -147,7 +146,6 @@ let g:ctrlp_working_path_mode = 'ra'
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_global_ycm_extra_conf = "$HOME/vimfiles/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py"
-"let g:solarized_contrast = "high"
 map <C-n> :tnext <CR>
 map <C-p> :tprev <CR>
 map <F2> :term <CR>
