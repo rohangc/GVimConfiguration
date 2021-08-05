@@ -12,6 +12,9 @@ Installation:
         b. curl
         c. clang - the same architecture as that of your Vim (x86/x64)
         d. Python - the same architecture as that of your Vim (x86/x64)
+           If you are prevented from installing Python on your system due to any reason:
+                1. Extract the Python distributable binaries into the same directory where the Vim binaries lie.
+                2. Temporarily add a path to this directory while compiling 'YouCompleteMe'.
         e. ctags
         f. cmake
         g. Microsoft Visual C++ to build 'YouCompleteMe'. The Express edition will suffice.
