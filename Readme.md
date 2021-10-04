@@ -50,3 +50,8 @@ Update:
         a. "git submodule foreach git pull origin master".
         b. "vim +PluginUpdate +qall".
 
+Some useful links:
+--------------------
+1. Configure CMake (required by YouCompleteMe) to generate a compilation database: https://github.com/ycm-core/YouCompleteMe#c-family-semantic-completion
+2. Force CMake to build your project using all available cores on your system: https://blog.kitware.com/cmake-building-with-all-your-cores
+3. Use Clang (instead of MSVC) to build projects in Visual Studio: https://docs.microsoft.com/en-us/cpp/build/clang-support-msbuild 
