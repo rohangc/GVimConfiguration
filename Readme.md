@@ -22,7 +22,7 @@ Installation:
 
     3. Invoke a "Git Shell" and do the following:
 
-        a. Clone this repository onto your PC by executing command: "git clone --recursive https://github.com/rohangc/GVimConfiguration.git".
+        a. Clone this repository onto your PC by executing command: "git clone --recursive https://github.com/rohangc/GVimConfiguration.git --branch YouCompleteMe".
            This will create a directory called 'GVimConfiguration'.
 
         b. Move all files from within the newly created directory, 'GVimConfiguration', into your 'HOME' directory. On Windows, this is usually 'C:\Users\<your login name>'.
