@@ -56,3 +56,4 @@ Some useful links:
 2. Force CMake to build your project using all available cores on your system: https://blog.kitware.com/cmake-building-with-all-your-cores
 3. Use Clang (instead of MSVC) to build projects in Visual Studio: https://docs.microsoft.com/en-us/cpp/build/clang-support-msbuild
 4. Clangd documentation: https://clangd.llvm.org/installation
+5. Python semantic support is through the JEDI engine: https://github.com/davidhalter/jedi
