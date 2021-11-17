@@ -51,14 +51,18 @@ Update:
         b. "vim +PluginUpdate +qall".
 
 Some useful links:
---------------------
+-----------------
 C++:
-    1. YouCompleteMe C family documentation: https://github.com/ycm-core/YouCompleteMe#c-family-semantic-completion
-    2. Configure CMake (required by YouCompleteMe) to generate a compilation database: https://github.com/ycm-core/YouCompleteMe#c-family-semantic-completion
-    3. Force CMake to build your project using all available cores on your system: https://blog.kitware.com/cmake-building-with-all-your-cores
-    4. Use Clang (instead of MSVC) to build projects in Visual Studio: https://docs.microsoft.com/en-us/cpp/build/clang-support-msbuild
-    5. Clangd documentation: https://clangd.llvm.org/installation
+---
+
+1. YouCompleteMe C family documentation: https://github.com/ycm-core/YouCompleteMe#c-family-semantic-completion
+2. Configure CMake (required by YouCompleteMe) to generate a compilation database: https://github.com/ycm-core/YouCompleteMe#c-family-semantic-completion
+3. Force CMake to build your project using all available cores on your system: https://blog.kitware.com/cmake-building-with-all-your-cores
+4. Use Clang (instead of MSVC) to build projects in Visual Studio: https://docs.microsoft.com/en-us/cpp/build/clang-support-msbuild
+5. Clangd documentation: https://clangd.llvm.org/installation
 
 Python:
-    1. YouCompleteMe Python documentation: https://github.com/ycm-core/YouCompleteMe#python-semantic-completion
-    2. Python semantic code completion support is through the JEDI engine: https://github.com/davidhalter/jedi
+------
+
+1. YouCompleteMe Python documentation: https://github.com/ycm-core/YouCompleteMe#python-semantic-completion
+2. Python semantic code completion support is through the JEDI engine: https://github.com/davidhalter/jedi
