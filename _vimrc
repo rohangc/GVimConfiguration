@@ -155,6 +155,7 @@ let g:ycm_clangd_uses_ycmd_caching = 0
 let g:ycm_clangd_binary_path = exepath("clangd")
 map <C-n> :tnext <CR>
 map <C-p> :tprev <CR>
+map <C-l> :YcmCompleter GoToDefinition <CR>
 map <F2> :term <CR>
 map <F5> :cprev <CR>
 map <F6> :cnext <CR>
