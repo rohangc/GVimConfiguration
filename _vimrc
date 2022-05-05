@@ -153,14 +153,15 @@ let g:ycm_max_diagnostics_to_display=0
 let g:ycm_clangd_uses_ycmd_caching = 0
 " Use installed clangd, not YCM-bundled clangd which doesn't get updates.
 let g:ycm_clangd_binary_path = exepath("clangd")
-map <C-n> :tnext <CR>
-map <C-p> :tprev <CR>
-map <C-l> :YcmCompleter GoToDefinition <CR>
-map <F2> :term <CR>
-map <F5> :cprev <CR>
-map <F6> :cnext <CR>
-"map <F7> :CtrlPMixed <CR>
-map <F8> :NERDTreeToggle <CR>
-map <F9> :TlistToggle <CR>
-map <F10> :BufExplorerVerticalSplit <CR>
-map <2-LeftMouse> *
+nmap <C-n> :tnext <CR>
+nmap <C-p> :tprev <CR>
+nmap <C-l> :YcmCompleter GoToDefinition <CR>
+nmap <S-l> :YcmCompleter GoToCallers <CR>
+nmap <F2> :term <CR>
+nmap <F5> :cprev <CR>
+nmap <F6> :cnext <CR>
+"nmap <F7> :CtrlPMixed <CR>
+nmap <F8> :NERDTreeToggle <CR>
+nmap <F9> :TlistToggle <CR>
+nmap <F10> :BufExplorerVerticalSplit <CR>
+nmap <2-LeftMouse> *
