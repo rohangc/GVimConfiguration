@@ -143,6 +143,8 @@ let g:Tlist_WinWidth = 70
 let g:ctrlp_map = '<F7>'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 'ra'
+
+let g:ycm_clangd_args = ['--clang-tidy']
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_add_preview_to_completeopt = 0
 let g:ycm_confirm_extra_conf = 0
@@ -154,6 +156,7 @@ let g:ycm_show_detailed_diag_in_popup=1
 let g:ycm_clangd_uses_ycmd_caching = 0
 " Use installed clangd, not YCM-bundled clangd which doesn't get updates.
 let g:ycm_clangd_binary_path = exepath("clangd")
+
 nnoremap <C-n> :tnext <CR>
 nnoremap <C-p> :tprev <CR>
 nnoremap <C-l> :YcmCompleter GoToDefinition <CR>
