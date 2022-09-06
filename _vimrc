@@ -154,6 +154,7 @@ let g:ycm_show_detailed_diag_in_popup=1
 let g:ycm_clangd_uses_ycmd_caching = 0
 " Use installed clangd, not YCM-bundled clangd which doesn't get updates.
 let g:ycm_clangd_binary_path = exepath("clangd")
+let g:ycm_clangd_args = ['--clang-tidy']
 nnoremap <C-n> :tnext <CR>
 nnoremap <C-p> :tprev <CR>
 nnoremap <C-l> :YcmCompleter GoToDefinition <CR>

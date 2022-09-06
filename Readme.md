@@ -41,7 +41,9 @@ Installation:
 
     4. Build 'YouCompleteMe' according to instructions on its site: http://valloric.github.io/YouCompleteMe.
 
-    5. Restart Vim.
+    5. Copy '.clang-tidy' (after modifying to your heart's content) into the 'root' directory that holds all your projects.
+
+    6. Restart Vim.
 
 Update:
 ------
