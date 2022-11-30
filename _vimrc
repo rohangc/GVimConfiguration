@@ -157,8 +157,9 @@ let g:ycm_clangd_binary_path = exepath("clangd")
 let g:ycm_clangd_args = ['--clang-tidy']
 nnoremap <C-n> :tnext <CR>
 nnoremap <C-p> :tprev <CR>
-nnoremap <C-l> :YcmCompleter GoToDefinition <CR>
-nnoremap <S-l> :YcmCompleter GoToCallers <CR>
+nnoremap <C-l> :YcmCompleter GoTo <CR>
+nnoremap <S-l> :YcmCompleter GoToDefinition <CR>
+nnoremap <C-k> :YcmCompleter GoToCallers <CR>
 nnoremap <F2> :term <CR>
 nnoremap <F5> :cprev <CR>
 nnoremap <F6> :cnext <CR>
