@@ -44,6 +44,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'sukima/xmledit'
 Plugin 'vim-scripts/AfterColors.vim'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'github/copilot.vim'
 " This one takes a lot of time, hence do it last
 Plugin 'ycm-core/YouCompleteMe'
 " The following are made redundant by 'Valloric/YouCompleteMe' above:
@@ -150,6 +151,7 @@ let g:ycm_global_ycm_extra_conf = "$HOME/.vim/bundle/YouCompleteMe/.ycm_extra_co
 let g:ycm_disable_for_files_larger_than_kb=5000
 let g:ycm_max_diagnostics_to_display=0
 let g:ycm_show_detailed_diag_in_popup=1
+let g:ycm_always_populate_location_list = 1
 " Let clangd fully control code completion
 let g:ycm_clangd_uses_ycmd_caching = 0
 " Use installed clangd, not YCM-bundled clangd which doesn't get updates.
