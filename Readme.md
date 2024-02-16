@@ -9,15 +9,14 @@ Installation:
 
     2. Install the following software and ensure that Vim and all these binaries are accessible via your 'PATH' environment variable:
         a. Git
-        b. curl
-        c. clangd for C family programming launguages semantics support - the same architecture as that of your Vim (x86/x64)
-                1. As mentioned in the YouCompleteMe manual, if you don't use cmake, you may need to install and configure your build system to use a utility such as 'compiledb' or 'Bear' to create compilation databases.
+        b. Node.js
         d. Python - the same architecture as that of your Vim (x86/x64)
            If you are prevented from installing Python on your system due to any reason:
                 1. Extract the Python distributable binaries into the same directory where the Vim binaries lie.
                 2. Temporarily add a path to this directory while compiling 'YouCompleteMe'.
         e. ctags
         f. cmake
+                1. As mentioned in the YouCompleteMe manual, if you don't use cmake, you may need to install and configure your build system to use a utility such as 'compiledb' or 'Bear' to create compilation databases.
         g. Microsoft Visual C++ to build 'YouCompleteMe'. The Express edition will suffice.
 
     3. Invoke a "Git Shell" and do the following:
