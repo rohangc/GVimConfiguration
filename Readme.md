@@ -5,52 +5,52 @@ Installation:
 ------------
 
     1. Install Vim ... obviously!
-       Ensure that you choose to create a default '_vimrc' file in the $VIM directory.
+        a. On Windoes, during installation of GVim, choose to:
+            i. Create .bat files.
+            ii. Create a default '_vimrc' file in the $VIM directory.
+            ii. Create a 'shared' plugins directory (not a private one).
+            iii. Remap a few keys.
 
     2. Install the following software and ensure that Vim and all these binaries are accessible via your 'PATH' environment variable:
-        a. Git
-        b. curl
-        c. clangd for C family programming launguages semantics support - the same architecture as that of your Vim (x86/x64)
-                1. As mentioned in the YouCompleteMe manual, if you don't use cmake, you may need to install and configure your build system to use a utility such as 'compiledb' or 'Bear' to create compilation databases.
-        d. Python - the same architecture as that of your Vim (x86/x64)
+        a. Git (should also automatically install Curl)
+        b. Python - the same architecture as that of your Vim (x86/x64)
            If you are prevented from installing Python on your system due to any reason:
                 1. Extract the Python distributable binaries into the same directory where the Vim binaries lie.
                 2. Temporarily add a path to this directory while compiling 'YouCompleteMe'.
-        e. ctags
+        c. ctags
+        d. Microsoft Visual C++ to build 'YouCompleteMe'. The Express edition will suffice.
+        e. Node.js (for the Github Copilot plugin)
         f. cmake
-        g. Microsoft Visual C++ to build 'YouCompleteMe'. The Express edition will suffice.
+                1. As mentioned in the YouCompleteMe manual, if you don't use cmake, you may need to install and configure your build system to use a utility such as 'compiledb' or 'Bear' to create compilation databases.
 
-    3. Invoke a "Git Shell" and do the following:
+    3. Copy only the following files this repository into your 'HOME' directory (on Windows, this is usually 'C:\Users\<your login name>').
+        a. Directory: '.vim' and all its subdirectories.
+        b. '_vimrc'.
+        c. 'GvimConfigure.sh'
+    
+    4. Invoke a "Git Shell" and do the following:
+        a. Navigate to your 'HOME' directory.
+        b. Execute the script 'GvimConfigure.sh'.
+            1. Ignore errors about a missing shared '/usr/share/_vimrc' file and missing theme 'Alduin'.
 
-        a. Clone this repository onto your PC by executing command: "git clone --recursive https://github.com/rohangc/GVimConfiguration.git --branch YouCompleteMe".
-           This will create a directory called 'GVimConfiguration'.
+    5. Build 'YouCompleteMe' according to instructions on its site: http://valloric.github.io/YouCompleteMe.
+        a. In brief on Windows:
+            1. Open a Visual Studio "x64 Native tools Command Prompt".
+            2. Navigate to directory: %HOME%\.vim\bundle\YouCompleteMe.
+            3. Execute: "python ./install.py --clangd-completer".
 
-        b. Move all files from within the newly created directory, 'GVimConfiguration', into your 'HOME' directory. On Windows, this is usually 'C:\Users\<your login name>'.
+    6. Copy '.clang-tidy' (after modifying to your heart's content) into the 'root' directory that holds all your projects.
 
-        c. Navigate to your 'HOME' directory.
-
-        d. Execute command: "git submodule foreach git pull origin master".
-
-        e. Install plugins using one of the following methods (either of these will take a while, go grab a coffee):
-            1. From within Vim:
-                i.   Invoke GVim (from within the "Git Shell" on Windows).
-                ii.  Ignore all error messages.
-                iii. Execute Vim command: ':PluginInstall'.
-            2. From the command prompt ("Git Shell" on Windows):
-                i.   Execute: "vim +PluginInstall +qall".
-
-    4. Build 'YouCompleteMe' according to instructions on its site: http://valloric.github.io/YouCompleteMe.
-
-    5. Copy '.clang-tidy' (after modifying to your heart's content) into the 'root' directory that holds all your projects.
-
-    6. Restart Vim.
+    7. Restart GVim.
 
 Update:
 ------
 
-    1. Invoke a "Git Shell" and execute the following commands:
-        a. "git submodule foreach git pull origin master".
+    1. Command line: Invoke a "Git Shell" and execute the following commands:        
         b. "vim +PluginUpdate +qall".
+
+    2. From within GVim: ":PluginUpdate".
+
 
 Some useful links:
 -----------------
