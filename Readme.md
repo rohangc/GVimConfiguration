@@ -6,7 +6,7 @@ Installation:
 
     1. Install Vim ... obviously!
         a. On Windoes, during installation of GVim, choose to:
-            i. Create .bat files.
+            i. Create '.bat' files.
             ii. Create a default '_vimrc' file in the $VIM directory.
             ii. Create a 'shared' plugins directory (not a private one).
             iii. Remap a few keys.
@@ -23,7 +23,7 @@ Installation:
         f. cmake
                 1. As mentioned in the YouCompleteMe manual, if you don't use cmake, you may need to install and configure your build system to use a utility such as 'compiledb' or 'Bear' to create compilation databases.
 
-    3. Copy only the following files this repository into your 'HOME' directory (on Windows, this is usually 'C:\Users\<your login name>').
+    3. Copy only the following files from this repository into your 'HOME' directory (on Windows, this is usually 'C:\Users\<your login name>').
         a. Directory: '.vim' and all its subdirectories.
         b. '_vimrc'.
         c. 'GvimConfigure.sh'
@@ -31,10 +31,11 @@ Installation:
     4. Invoke a "Git Shell" and do the following:
         a. Navigate to your 'HOME' directory.
         b. Execute the script 'GvimConfigure.sh'.
-            1. Ignore errors about a missing shared '/usr/share/_vimrc' file and missing theme 'Alduin'.
+            1. On Windows, ignore errors about a missing shared '/usr/share/_vimrc' file.
+            2. Ignore errors about missing theme 'Alduin'.
 
-    5. Build 'YouCompleteMe' according to instructions on its site: http://valloric.github.io/YouCompleteMe.
-        a. In brief on Windows:
+    5. Build 'YouCompleteMe' according to instructions on its website: http://valloric.github.io/YouCompleteMe.
+        a. In brief, on Windows:
             1. Open a Visual Studio "x64 Native tools Command Prompt".
             2. Navigate to directory: %HOME%\.vim\bundle\YouCompleteMe.
             3. Execute: "python ./install.py --clangd-completer".
