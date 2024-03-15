@@ -28,7 +28,7 @@ Installation:
         b. '_vimrc'.
         c. 'GvimConfigure.sh'
     
-    4. Invoke a "Git Shell" and do the following:
+    4. Invoke a "Git Shell" ("Git Bash" on Windows) and do the following:
         a. Navigate to your 'HOME' directory.
         b. Execute the script 'GvimConfigure.sh'.
             1. On Windows, ignore errors about a missing shared '/usr/share/_vimrc' file.
