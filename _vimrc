@@ -37,16 +37,18 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'AlessandroYorba/Alduin'
 "Plugin 'altercation/vim-colors-solarized'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'ervandew/supertab'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sukima/xmledit'
 Plugin 'vim-scripts/AfterColors.vim'
-Plugin 'vim-scripts/AutoComplPop'
-Plugin 'vim-scripts/OmniCppComplete'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'github/copilot.vim'
+" This one takes a lot of time, hence do it last
+Plugin 'ycm-core/YouCompleteMe'
+" The following are made redundant by 'Valloric/YouCompleteMe' above:
+" AutoCompIPop, supertab, OmniCPPComplete
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -67,10 +69,6 @@ filetype plugin indent on    " required
 
 " My Colour scheme
 colorscheme alduin
-" Settings for solarized ...
-"set background=dark
-"colorscheme solarized
-
 
 " My font (on Windows only)
 if has('gui_running') && (has('win32') || has('win64'))
@@ -111,6 +109,9 @@ set smartcase
 syntax enable 
 
 
+set encoding=utf-8
+
+
 " My preferred settings
 set autoindent
 set belloff=all
@@ -143,14 +144,29 @@ let g:Tlist_WinWidth = 70
 let g:ctrlp_map = '<F7>'
 let g:ctrlp_cmd = 'CtrlPMixed'
 let g:ctrlp_working_path_mode = 'ra'
-"let g:solarized_contrast = "high"
-map <C-n> :tnext <CR>
-map <C-p> :tprev <CR>
-map <F2> :term <CR>
-map <F5> :cprev <CR>
-map <F6> :cnext <CR>
-"map <F7> :CtrlPMixed <CR>
-map <F8> :NERDTreeToggle <CR>
-map <F9> :TlistToggle <CR>
-map <F10> :BufExplorerVerticalSplit <CR>
-map <2-LeftMouse> *
+let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_add_preview_to_completeopt = 0
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_global_ycm_extra_conf = "$HOME/.vim/bundle/YouCompleteMe/.ycm_extra_conf.py"
+let g:ycm_disable_for_files_larger_than_kb=5000
+let g:ycm_max_diagnostics_to_display=0
+let g:ycm_show_detailed_diag_in_popup=1
+let g:ycm_always_populate_location_list = 1
+" Let clangd fully control code completion
+let g:ycm_clangd_uses_ycmd_caching = 0
+" Use installed clangd, not YCM-bundled clangd which doesn't get updates.
+let g:ycm_clangd_binary_path = exepath("clangd")
+let g:ycm_clangd_args = ['--clang-tidy']
+nnoremap <C-n> :tnext <CR>
+nnoremap <C-p> :tprev <CR>
+nnoremap <C-l> :YcmCompleter GoTo <CR>
+nnoremap <S-l> :YcmCompleter GoToDefinition <CR>
+nnoremap <C-k> :YcmCompleter GoToCallers <CR>
+nnoremap <F2> :term <CR>
+nnoremap <F5> :cprev <CR>
+nnoremap <F6> :cnext <CR>
+"nnoremap <F7> :CtrlPMixed <CR>
+nnoremap <F8> :NERDTreeToggle <CR>
+nnoremap <F9> :TlistToggle <CR>
+nnoremap <F10> :BufExplorerVerticalSplit <CR>
+nnoremap <2-LeftMouse> *

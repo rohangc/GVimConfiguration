@@ -1,1 +1,0 @@
-highlight Pmenu guibg=brown
