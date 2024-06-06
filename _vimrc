@@ -45,6 +45,7 @@ Plugin 'sukima/xmledit'
 Plugin 'vim-scripts/AfterColors.vim'
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'github/copilot.vim'
+Plugin 'drmingdrmer/vim-toggle-quickfix'
 " This one takes a lot of time, hence do it last
 Plugin 'ycm-core/YouCompleteMe'
 " The following are made redundant by 'Valloric/YouCompleteMe' above:
@@ -170,3 +171,5 @@ nnoremap <F8> :NERDTreeToggle <CR>
 nnoremap <F9> :TlistToggle <CR>
 nnoremap <F10> :BufExplorerVerticalSplit <CR>
 nnoremap <2-LeftMouse> *
+"For plugin 'drmingdrmer/vim-toggle-quickfix':
+nmap <C-g><C-o> <Plug>window:quickfix:loop
