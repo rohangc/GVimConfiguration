@@ -47,6 +47,7 @@ Plugin 'vim-scripts/taglist.vim'
 Plugin 'github/copilot.vim'
 Plugin 'drmingdrmer/vim-toggle-quickfix'
 Plugin 'tpope/vim-fugitive'
+Plugin 'elzr/vim-json'
 " This one takes a lot of time, hence do it last
 Plugin 'ycm-core/YouCompleteMe'
 " The following are made redundant by 'Valloric/YouCompleteMe' above:
