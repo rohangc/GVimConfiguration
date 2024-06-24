@@ -4,7 +4,7 @@ Usage guide:
 Installation:
 ------------
 
-    1. Install Vim (9.1.345 or above) ... obviously!
+    1. Install Vim (9.1.0345 or above) ... obviously!
         a. On Windoes, during installation of GVim, choose to:
             i. Create '.bat' files.
             ii. Create a default '_vimrc' file in the $VIM directory.
