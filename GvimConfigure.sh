@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Clone Vundle.vim
-git clone --recursive https://github.com/VundleVim/Vundle.vim ./.config/.vim/bundle/Vundle.vim
+git clone --recursive https://github.com/VundleVim/Vundle.vim ./.config/vim/.vim/bundle/Vundle.vim
 
 # Use Gvim to install GVim plugins using Vundle.vim
 vim +PluginInstall +qall
