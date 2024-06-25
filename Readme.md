@@ -5,7 +5,7 @@ Installation:
 ------------
 
     1. Install Vim ... obviously!
-        a. On Windoes, during installation of GVim, choose to:
+        a. On Windows, during installation of GVim, choose to:
             i. Create '.bat' files.
             ii. Create a default '_vimrc' file in the $VIM directory.
             ii. Create a 'shared' plugins directory (not a private one).
