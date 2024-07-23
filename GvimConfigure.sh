@@ -8,3 +8,4 @@ vim +PluginInstall +qall
 
 # Delete self.
 rm -rf 'GvimConfigure.sh'
+rm -rf 'Readme.md'
