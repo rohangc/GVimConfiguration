@@ -1,5 +1,8 @@
 Usage guide:
 -----------
+Note:
+This project is no longer maintained as I've switched over to NeoVim.
+Checkout my project: 'NeoVimConfiguration', which is an improved version of this one.
 
 Installation:
 ------------
